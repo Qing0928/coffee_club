@@ -1,1 +1,1 @@
-# The web site for Coffee Club in National Yunlin University of Science & Technology
+# The web site for National Yunlin University of Science & Technology Coffee Club
