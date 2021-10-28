@@ -8,7 +8,7 @@
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>
- 
+ <p id="demo"></p>
 <script>
   var dataJSON = {};
   dataJSON["id"] = "1";
@@ -21,7 +21,7 @@
     contentType:"application/json;charset=utf-8", 
     success:function(data){
       var json_test = jQuery.parseJSON(data);
-      alert(json_test.name);
+      document.getElementById("demo").innerHTML = json_test.name;
     },
   });
 </script>
