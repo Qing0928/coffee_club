@@ -15,13 +15,14 @@
   $.ajax({
     type:"POST", 
     url:'http://103.17.9.180:8467/member_info', 
+    //url:'http://127.0.0.1:8467/member_info', 
     data:JSON.stringify(dataJSON), 
     dataType:"json", 
     crossDomain:true, 
     contentType:"application/json;charset=utf-8", 
     success:function(data){
       var json_test = jQuery.parseJSON(data);
-      document.getElementById("demo").innerHTML = json_test.name;
+      document.getElementById("demo").innerHTML = json_test.name + "\n" + json_test.id + "\n" + json_test.department;
     },
   });
 </script>
