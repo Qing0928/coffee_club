@@ -20,7 +20,8 @@
     crossDomain:true, 
     contentType:"application/json;charset=utf-8", 
     success:function(data){
-      alert('get return:' + data)
+      var json_test = jQuery.parseJSON(data);
+      alert(json_test.name);
     },
   });
 </script>
